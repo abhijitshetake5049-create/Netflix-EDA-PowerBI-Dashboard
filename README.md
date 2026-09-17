@@ -74,7 +74,7 @@ The processed dataset was used to create a **7-page interactive Power BI dashboa
 - Average Movie Duration
 - Average TV Show Seasons
 
-![Content Analysis](content-analysis.png)
+![Content Analysis](content-analysis..png)
 
 ---
 

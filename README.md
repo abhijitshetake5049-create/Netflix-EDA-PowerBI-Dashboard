@@ -14,6 +14,8 @@ Python was used for data cleaning and EDA, and the final processed dataset was u
 
 ## 🧹 Data Cleaning & Preprocessing
 
+The original dataset `Netflix_titles.csv` was cleaned and processed using Python, Pandas, and NumPy, and the final cleaned dataset was saved as `Netflix_final.csv`.
+
 Using Python, Pandas, and NumPy:
 
 - Handled missing values
@@ -22,8 +24,6 @@ Using Python, Pandas, and NumPy:
 - Converted `date_added` to datetime format
 - Handled missing director, cast, country, rating, and duration values
 - Prepared the dataset for analysis and visualization
-
----
 
 ## 🔍 Exploratory Data Analysis (EDA)
 

@@ -1,217 +1,191 @@
-# Netflix Movies & TV Shows — EDA & Power BI Dashboard
+# 🎬 Netflix Movies & TV Shows — EDA & Power BI Dashboard
 
-Data analysis project exploring Netflix Movies and TV Shows using Python, Pandas, and NumPy for data cleaning and Exploratory Data Analysis (EDA), followed by an interactive Power BI dashboard for visualization and insight generation.
+Data analytics project exploring Netflix Movies and TV Shows using Python, Pandas, and NumPy for data cleaning, preprocessing, feature engineering, and Exploratory Data Analysis (EDA), followed by an interactive Power BI dashboard for visualization and insight generation.
 
 ---
 
 ## 📊 Project Overview
 
-This project analyzes the Netflix Movies and TV Shows dataset to understand the characteristics and distribution of Netflix content.
+This project analyzes the Netflix Movies and TV Shows dataset to understand content type, ratings, genres, countries, directors, movie durations, TV show seasons, and release trends.
 
-Python was used for **data cleaning, preprocessing, feature engineering, and Exploratory Data Analysis (EDA)** using Pandas and NumPy.
-
-The final processed dataset was then used to create an interactive **Power BI dashboard** covering content type, genres, ratings, countries, directors, movie durations, TV show seasons, and release trends.
+Python was used for data cleaning and EDA, and the final processed dataset was used to build an interactive Power BI dashboard.
 
 ---
-    🧹 Data Cleaning & Preprocessing
 
-The Netflix dataset was cleaned and prepared using Python, Pandas, and NumPy.
+## 🧹 Data Cleaning & Preprocessing
 
-The major operations included:
+Using Python, Pandas, and NumPy:
 
-Handling missing values
-Replacing infinite and negative infinite values
-Removing duplicate records
-Converting date_added into datetime format
-Handling missing director information
-Handling missing cast information
-Handling missing country information
-Handling missing ratings
-Handling missing duration values
-⚙️ Feature Engineering
+- Handled missing values
+- Replaced infinite and negative infinite values
+- Removed duplicate records
+- Converted `date_added` to datetime format
+- Handled missing director, cast, country, rating, and duration values
+- Prepared the dataset for analysis and visualization
 
-Additional features were created to support deeper analysis.
+---
 
-🎬 Movie Duration
+## 🔍 Exploratory Data Analysis (EDA)
 
-Movie duration was extracted from the original duration column.
+EDA was performed using Pandas and NumPy to analyze:
 
-Movies were categorized into:
+- Movies vs TV Shows
+- Ratings
+- Genres
+- Countries
+- Directors
+- Movie durations
+- TV show seasons
+- Release years
+- Content added over time
 
-Short
-Medium
-Long
-📺 TV Show Seasons
+Feature engineering included extracting movie duration and TV show seasons and creating duration and season categories.
 
-The number of seasons was extracted from the duration column for TV Shows.
+The complete Python analysis is available in `Netflix_EDA.py`.
 
-TV Shows were categorized based on the number of seasons.
+---
 
-📅 Year-Based Analysis
+## 📈 Power BI Dashboard
 
-Year-based features were used to analyze:
+The processed dataset was used to create a **7-page interactive Power BI dashboard**.
 
-Content release trends
-Netflix content additions over time
-Movies vs TV Shows across different years
-🔍 Exploratory Data Analysis
+### 1. 🎬 Netflix Overview
 
-EDA was performed using Pandas and NumPy.
+- Total Titles
+- Total Movies
+- Total TV Shows
+- Total Countries
+- Movies vs TV Shows
+- Titles Added by Year
+- Rating Distribution
+- Titles by Release Year
 
-The analysis includes:
+![Netflix Overview](overview.png)
 
-🎬 Content Analysis
-Movies vs TV Shows
-Content type distribution
-Movie duration distribution
-TV show season distribution
-Content type by release year
-⭐ Rating Analysis
-Rating distribution
-Rating by content type
-Most common rating
-Average movie duration by rating
-🎭 Genre Analysis
-Genre distribution
-Most common genres
-Genre distribution by content type
-🌍 Country Analysis
-Country-wise content distribution
-Movies by country
-TV Shows by country
-Country distribution by content type
-🎥 Director Analysis
-Titles by director
-Movies by director
-TV Shows by director
-Director distribution by content type
-📅 Release & Growth Analysis
-Titles by release year
-Titles added by year
-Titles added by year and content type
-Release year by content type
-📈 Power BI Dashboard
+---
 
-The processed Netflix dataset was used to create an interactive Power BI
-dashboard consisting of 7 analytical pages.
+### 2. 📺 Content Analysis
 
-1. 🎬 Netflix Overview
+- Content Type by Release Year
+- Movie Duration Distribution
+- Movies by Duration Category
+- TV Shows by Number of Seasons
+- TV Shows by Release Year
+- Average Movie Duration
+- Average TV Show Seasons
 
-Provides a high-level overview of Netflix content using KPI cards and
-visualizations.
+![Content Analysis](content-analysis.png)
 
-Includes:
-Total Titles
-Total Movies
-Total TV Shows
-Total Countries
-Movies vs TV Shows
-Titles Added by Year
-Rating Distribution
-Titles by Release Year
-Dashboard Preview
+---
 
-2. 📺 Content Analysis
+### 3. 🎭 Genre & Rating Analysis
 
-Analyzes the structure and duration of Netflix Movies and TV Shows.
+- Genre by Content Type
+- Rating by Content Type
+- Average Movie Duration by Rating
+- Rating Distribution
+- Most Common Rating
+- Total Genres
+- Movie Percentage
 
-Includes:
-Content Type by Release Year
-Movie Duration Distribution
-Movies by Duration Category
-TV Shows by Number of Seasons
-TV Shows by Release Year
-Average Movie Duration
-Average TV Show Seasons
-Dashboard Preview
+![Genre & Rating Analysis](genre-rating.png)
 
-3. 🎭 Genre & Rating Analysis
+---
 
-Analyzes Netflix content based on genres, ratings, and content type.
+### 4. 🌍 Country Analysis
 
-Includes:
-Genre by Content Type
-Rating by Content Type
-Average Movie Duration by Rating
-Rating Distribution
-Most Common Rating
-Total Genres
-Movie Percentage
-Dashboard Preview
+- Country Distribution
+- Country by Content Type
+- Movies by Country
+- TV Shows by Country
+- Total Countries
+- Average Countries per Title
+- TV Show Percentage
 
-4. 🌍 Country Analysis
+![Country Analysis](country-analysis.png)
 
-Analyzes the geographical distribution of Netflix content.
+---
 
-Includes:
-Country Distribution
-Country by Content Type
-Movies by Country
-TV Shows by Country
-Total Countries
-Average Countries per Title
-TV Show Percentage
-Dashboard Preview
+### 5. 📅 Release & Growth Analysis
 
-5. 📅 Release & Growth Analysis
+- Titles by Release Year
+- Titles Added by Year
+- Titles Added by Year & Type
+- Titles by Release Year & Type
+- Total Releases
+- Oldest Release Year
+- Latest Release Year
+- Highest Titles in a Year
+- Peak Release Year
 
-Analyzes Netflix content based on release years and content addition trends.
+![Release & Growth Analysis](release-growth.png)
 
-Includes:
-Titles by Release Year
-Titles Added by Year
-Titles Added by Year & Type
-Titles by Release Year & Type
-Total Releases
-Oldest Release Year
-Latest Release Year
-Highest Titles in a Year
-Peak Release Year
-Dashboard Preview
+---
 
-6. 🎥 Director Analysis
+### 6. 🎥 Director Analysis
 
-Analyzes Netflix content based on directors and their associated titles.
+- Titles by Director
+- Director by Content Type
+- Movies by Director
+- TV Shows by Director
+- Total Directors
+- Highest Titles by Director
+- Average Titles per Director
 
-Includes:
-Titles by Director
-Director by Content Type
-Movies by Director
-TV Shows by Director
-Total Directors
-Highest Titles by Director
-Average Titles per Director
-Dashboard Preview
+![Director Analysis](director-analysis.png)
 
-7. 💡 Final Insights
+---
 
-Summarizes the major findings from the complete Netflix analysis.
+### 7. 💡 Final Insights
 
-Includes:
-Most Common Rating
-Long Movies %
-One Season TV Shows %
-Most Common Release Year
-Content Type Distribution
-Genres by Titles
-Titles Added by Year & Type
-Countries by Titles
-Dashboard Preview
+- Most Common Rating — TV-MA
+- Long Movies — 18.63%
+- One Season TV Shows — 67.00%
+- Most Common Release Year — 2018
+- Content Type Distribution
+- Genres by Titles
+- Titles Added by Year & Type
+- Countries by Titles
 
-📌 Key Insights
+![Final Insights](final-insights.png)
 
-The dashboard provides an interactive way to explore:
+---
 
-Distribution of Movies and TV Shows
-Most common content ratings
-Popular Netflix genres
-Country-wise content distribution
-Movie duration patterns
-TV show season patterns
-Director-level content distribution
-Netflix release trends
-Netflix content addition trends
-📂 Project Structure
+## 🛠️ Tools & Technologies
+
+- Python
+- Pandas
+- NumPy
+- Power BI
+- Jupyter Notebook / VS Code
+- GitHub
+
+---
+
+## 📈 Key Insights
+
+The dashboard provides insights into:
+
+- Movie and TV Show distribution
+- Rating patterns
+- Genre popularity
+- Country-wise content distribution
+- Movie duration patterns
+- TV show season patterns
+- Director-level content distribution
+- Release and content addition trends
+
+---
+
+## 🎯 Project Objective
+
+The objective of this project is to transform raw Netflix data into meaningful insights through Python-based data cleaning and Exploratory Data Analysis, and present the results using an interactive Power BI dashboard.
+
+---
+
+## 📂 Project Structure
+
+```text
 Netflix-EDA-PowerBI-Dashboard/
 │
 ├── README.md
@@ -226,16 +200,3 @@ Netflix-EDA-PowerBI-Dashboard/
 ├── release-growth.png
 ├── director-analysis.png
 └── final-insights.png
-📁 Files Description
-
-File	Description
-Netflix_EDA.py	Python code for data cleaning, preprocessing, feature engineering, EDA, and insights
-Netflix_titles.csv	Original Netflix dataset
-Netflix_final.csv	Final cleaned and processed dataset
-overview.png	Netflix Overview dashboard screenshot
-content-analysis.png	Content Analysis dashboard screenshot
-genre-rating.png	Genre & Rating Analysis dashboard screenshot
-country-analysis.png	Country Analysis dashboard screenshot
-release-growth.png	Release & Growth Analysis dashboard screenshot
-director-analysis.png	Director Analysis dashboard screenshot
-final-insights.png	Final Insights dashboard screenshot
